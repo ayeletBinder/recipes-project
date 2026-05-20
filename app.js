@@ -33,7 +33,7 @@ app.use("/categories",categoryRouter);
 app.use(pageNotFound);
 app.use(serverNotFound);
 
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 app.listen(port,()=>{
     console.log("running at http://localhost:" + port);
 });
